@@ -10,6 +10,7 @@
     <RepositoryUrl>https://github.com/jaka-logar/LSolutions.Extensions</RepositoryUrl>
     <PackageTags>helpers, extension methods, extensionmethods, utils</PackageTags>
     <NeutralLanguage>en</NeutralLanguage>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(TargetFramework)'=='netstandard1.4'">
@@ -19,4 +20,11 @@
   <PropertyGroup Condition="'$(TargetFramework)'=='net45'">
     <DefineConstants>net45</DefineConstants>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 </Project>
