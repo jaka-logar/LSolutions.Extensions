@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.4;net45</TargetFrameworks>
+    <Authors>Jaka Logar</Authors>
+    <Company />
+    <Title>LSolutions extension methods</Title>
+    <Description>Simple and very helpful extension methods. Some Enumerable extension, Object extension and String extension methods.</Description>
+    <PackageProjectUrl>https://github.com/jaka-logar/LSolutions.Extensions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/jaka-logar/LSolutions.Extensions</RepositoryUrl>
+    <PackageTags>helpers, extension methods, extensionmethods, utils</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)'=='netstandard1.4'">
+    <DefineConstants>netstandard1_4</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)'=='net45'">
+    <DefineConstants>net45</DefineConstants>
+  </PropertyGroup>
+</Project>
