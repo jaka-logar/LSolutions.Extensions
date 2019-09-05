@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using JetBrains.Annotations;
 
 namespace LSolutions.Extensions
 {
@@ -14,6 +15,7 @@ namespace LSolutions.Extensions
         /// </summary>
         /// <param name="input">Input string</param>
         /// <returns>True of string is null or empty</returns>
+        [ContractAnnotation("input:null => true")]
         public static bool IsNullOrEmpty(this string input)
         {
             return string.IsNullOrEmpty(input);
@@ -24,6 +26,7 @@ namespace LSolutions.Extensions
         /// </summary>
         /// <param name="input">Input string</param>
         /// <returns>True of string is null or whitespace</returns>
+        [ContractAnnotation("input:null => true")]
         public static bool IsNullOrWhiteSpace(this string input)
         {
             return string.IsNullOrWhiteSpace(input);
@@ -34,6 +37,7 @@ namespace LSolutions.Extensions
         /// </summary>
         /// <param name="input">Input string</param>
         /// <returns>True if string has all upper characters</returns>
+        [ContractAnnotation("input:null => false")]
         public static bool IsAllUpper(this string input)
         {
             if (string.IsNullOrWhiteSpace(input))
@@ -114,6 +118,7 @@ namespace LSolutions.Extensions
         /// <param name="toCheck">Comparing string</param>
         /// <param name="comp">StringComparison</param>
         /// <returns>Bool if source contains toCheck string</returns>
+        [ContractAnnotation("source:null => false")]
         public static bool Contains(this string source, string toCheck, StringComparison comp)
         {
             return source != null && toCheck != null && source.IndexOf(toCheck, comp) >= 0;
