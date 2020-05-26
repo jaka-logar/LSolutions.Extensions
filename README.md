@@ -1,6 +1,6 @@
 # LSolutions.Extensions
 
-Simple and very helpful extension methods used in every solution. Both for .NET Framework 4.5+ and .NET Standard 1.4+\
+Simple and very helpful extension methods used in every solution. Both for .NET Framework 4.5+ and .NET Standard 2.0+\
 Available also as NuGet package.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/bmjx6997lac1v9l9?svg=true)]([https://ci.appveyor.com/project/jaka-logar/lsolutions-extensions](https://ci.appveyor.com/project/jaka-logar/lsolutions-extensions))
